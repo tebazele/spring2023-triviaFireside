@@ -9,6 +9,9 @@ class AppState extends EventEmitter {
 
   /** @type {import('./Models/Question').Question} */
   question = null
+
+  jeannePoints = 0
+  classPoints = 0
 }
 
 export const appState = new Proxy(new AppState(), {

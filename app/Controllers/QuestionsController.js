@@ -31,4 +31,15 @@ export class QuestionsController {
             Pop.error('Nope')
         }
     }
+
+    updateScore(name, value) {
+        if (name == 'jeanne') {
+            appState.jeannePoints += value
+            document.getElementById('jeanne-points').innerText = appState.jeannePoints.toString()
+        } else {
+            appState.classPoints += value
+            document.getElementById('class-points').innerText = appState.classPoints.toString()
+        }
+
+    }
 }
