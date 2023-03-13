@@ -41,7 +41,7 @@ export class Question {
 
         let template = ''
         this.choices.forEach(c => {
-            template += ` <button class="btn btn-light border border-dark rounded">${c}</button>`
+            template += ` <button onclick="app.questionsController.checkAnswer('${c}')" class="btn btn-light border border-dark rounded">${c}</button>`
         })
         return template
     }
