@@ -4,8 +4,14 @@ import { isValidProp } from "./Utils/isValidProp.js"
 import { loadState } from "./Utils/Store.js"
 
 class AppState extends EventEmitter {
-  /** @type {import('./Models/Value').Value[]} */
-  values = loadState('values', [Value])
+  // /** @type {import('./Models/Value').Value[]} */
+  // values = loadState('values', [Value])
+
+  /** @type {import('./Models/Question').Question[]} */
+  questions = []
+
+  jeannePoints = 0
+  classPoints = 0
 }
 
 export const appState = new Proxy(new AppState(), {

@@ -34,8 +34,8 @@
             <h2>Jeanne's points</h2>
             <div class="d-flex align-items-baseline">
               <div>
-                <button class="btn btn-danger">+1</button>
-                <button class="btn btn-danger">-1</button>
+                <button onclick="app.questionsController.updatePoints('jeanne', 1)" class="btn btn-danger">+1</button>
+                <button onclick="app.questionsController.updatePoints('jeanne', -1)" class="btn btn-danger">-1</button>
               </div>
               <div class="ms-auto pt-2 px-2 border border-info rounded">
                 <p>Total: <span id="jeanne-points">0</span></p>
@@ -48,8 +48,8 @@
             <h2>Class points</h2>
             <div class="d-flex align-items-baseline">
               <div>
-                <button class="btn btn-danger">+1</button>
-                <button class="btn btn-danger">-1</button>
+                <button onclick="app.questionsController.updatePoints('class', 1)" class="btn btn-danger">+1</button>
+                <button onclick="app.questionsController.updatePoints('class', -1)" class="btn btn-danger">-1</button>
               </div>
               <div class="ms-auto pt-2 px-2 border border-info rounded">
                 <p>Total: <span id="class-points">0</span></p>
@@ -61,7 +61,7 @@
     </div>
     <!-- SECTION trivia questions -->
     <div class="container-fluid" id="trivia-container">
-      <section class="row justify-content-center">
+      <!-- <section class="row justify-content-center">
 
         <div class="col-12 text-center d-flex justify-content-center">
           <div class="question-box bg-light">
@@ -86,7 +86,7 @@
           <button class="btn btn-light border border-dark rounded">C answer</button>
 
         </div>
-      </section>
+      </section> -->
 
     </div>
 
