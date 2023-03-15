@@ -8,6 +8,10 @@ class AppState extends EventEmitter {
   values = loadState('values', [Value])
 
   questions = []
+
+  jeannePoints = 0
+
+  classPoints = 0
 }
 
 export const appState = new Proxy(new AppState(), {

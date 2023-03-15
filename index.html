@@ -34,8 +34,8 @@
             <h2>Jeanne's points</h2>
             <div class="d-flex align-items-baseline">
               <div>
-                <button class="btn btn-danger">+1</button>
-                <button class="btn btn-danger">-1</button>
+                <button onclick="app.questionsController.updateScore('jeanne', 1)" class="btn btn-danger">+1</button>
+                <button onclick="app.questionsController.updateScore('jeanne', -1)" class="btn btn-danger">-1</button>
               </div>
               <div class="ms-auto pt-2 px-2 border border-info rounded">
                 <p>Total: <span id="jeanne-points">0</span></p>
@@ -48,8 +48,8 @@
             <h2>Class points</h2>
             <div class="d-flex align-items-baseline">
               <div>
-                <button class="btn btn-danger">+1</button>
-                <button class="btn btn-danger">-1</button>
+                <button onclick="app.questionsController.updateScore('class', 1)" class="btn btn-danger">+1</button>
+                <button onclick="app.questionsController.updateScore('class', -1)" class="btn btn-danger">-1</button>
               </div>
               <div class="ms-auto pt-2 px-2 border border-info rounded">
                 <p>Total: <span id="class-points">0</span></p>
